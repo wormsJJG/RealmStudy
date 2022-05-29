@@ -11,7 +11,7 @@
         <!--로그인-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="RealmStudy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="RealmStudy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -65,6 +65,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="로그인" largeTitleDisplayMode="always" id="Ncx-WV-kGm"/>
+                    <connections>
+                        <outlet property="InsertIdTextField" destination="pck-Zd-4qL" id="rBi-6i-GWk"/>
+                        <outlet property="InsertPassWordTextField" destination="Z0d-bp-w9S" id="hlh-fh-Ebf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -73,7 +77,7 @@
         <!--회원가입-->
         <scene sceneID="ZV1-jC-82e">
             <objects>
-                <viewController id="kPX-bn-bOA" sceneMemberID="viewController">
+                <viewController id="kPX-bn-bOA" customClass="RegisterViewController" customModule="RealmStudy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cTC-IA-isJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -114,6 +118,9 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="가입하기"/>
+                                <connections>
+                                    <action selector="buttonRegister:" destination="kPX-bn-bOA" eventType="touchUpInside" id="obS-t3-xIp"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="I2L-2S-P6s"/>
@@ -140,6 +147,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="회원가입" id="MPB-z5-Wv1"/>
+                    <connections>
+                        <outlet property="InsertAgeTextField" destination="oAV-u3-GX3" id="ioU-mR-K9J"/>
+                        <outlet property="InsertGenderTextField" destination="peP-xA-aiA" id="4ID-Zh-Smh"/>
+                        <outlet property="InsertIdTextField" destination="nuh-5Y-oZe" id="bW2-lf-58x"/>
+                        <outlet property="InsertNameTextField" destination="tCe-AK-SQd" id="7c5-bH-2zn"/>
+                        <outlet property="InsertPassWordTextField" destination="WzX-kg-fqv" id="4zI-YT-3LI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ePH-eM-ZY1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -164,7 +178,7 @@
         <!--name님의 버킷리스트-->
         <scene sceneID="E2j-yg-rn9">
             <objects>
-                <viewController id="C1B-wT-2uV" sceneMemberID="viewController">
+                <viewController id="C1B-wT-2uV" customClass="HomeViewController" customModule="RealmStudy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZW1-cX-b8l">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

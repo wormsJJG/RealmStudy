@@ -15,8 +15,10 @@
 		35903EEC28438BA0004B4F4D /* RealmStudyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35903EEB28438BA0004B4F4D /* RealmStudyTests.swift */; };
 		35903EF628438BA0004B4F4D /* RealmStudyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35903EF528438BA0004B4F4D /* RealmStudyUITests.swift */; };
 		35903EF828438BA0004B4F4D /* RealmStudyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35903EF728438BA0004B4F4D /* RealmStudyUITestsLaunchTests.swift */; };
-		35903F0628438F68004B4F4D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35903F0528438F68004B4F4D /* HomeViewController.swift */; };
+		35903F0628438F68004B4F4D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35903F0528438F68004B4F4D /* LoginViewController.swift */; };
 		35903F0C284398CE004B4F4D /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35903F0B284398CE004B4F4D /* Model.swift */; };
+		35903F0E2843A2C1004B4F4D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35903F0D2843A2C1004B4F4D /* RegisterViewController.swift */; };
+		35903F102843A2D5004B4F4D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35903F0F2843A2D5004B4F4D /* HomeViewController.swift */; };
 		D21CE1AE67F5032675A326DC /* Pods_RealmStudy_RealmStudyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA9C71556EA66FF87117A855 /* Pods_RealmStudy_RealmStudyUITests.framework */; };
 		EA017B122DF0EDF218295074 /* Pods_RealmStudyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C7AC82347820E82CDEABD18 /* Pods_RealmStudyTests.framework */; };
 		F2FE92D7D2BCFEBADD08305E /* Pods_RealmStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35E56EE4DB24B3D2F5653E70 /* Pods_RealmStudy.framework */; };
@@ -55,8 +57,10 @@
 		35903EF128438BA0004B4F4D /* RealmStudyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RealmStudyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		35903EF528438BA0004B4F4D /* RealmStudyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmStudyUITests.swift; sourceTree = "<group>"; };
 		35903EF728438BA0004B4F4D /* RealmStudyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmStudyUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		35903F0528438F68004B4F4D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		35903F0528438F68004B4F4D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		35903F0B284398CE004B4F4D /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		35903F0D2843A2C1004B4F4D /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		35903F0F2843A2D5004B4F4D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		35E56EE4DB24B3D2F5653E70 /* Pods_RealmStudy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealmStudy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		40D7035390B2B9A06C76CCBF /* Pods-RealmStudyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmStudyTests.release.xcconfig"; path = "Target Support Files/Pods-RealmStudyTests/Pods-RealmStudyTests.release.xcconfig"; sourceTree = "<group>"; };
 		7CA90BF1363B353D82F56DFE /* Pods-RealmStudy-RealmStudyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmStudy-RealmStudyUITests.release.xcconfig"; path = "Target Support Files/Pods-RealmStudy-RealmStudyUITests/Pods-RealmStudy-RealmStudyUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -165,7 +169,9 @@
 		35903F0928439867004B4F4D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				35903F0528438F68004B4F4D /* HomeViewController.swift */,
+				35903F0528438F68004B4F4D /* LoginViewController.swift */,
+				35903F0D2843A2C1004B4F4D /* RegisterViewController.swift */,
+				35903F0F2843A2D5004B4F4D /* HomeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -442,9 +448,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				35903ED528438B9D004B4F4D /* AppDelegate.swift in Sources */,
+				35903F0E2843A2C1004B4F4D /* RegisterViewController.swift in Sources */,
 				35903ED728438B9D004B4F4D /* SceneDelegate.swift in Sources */,
-				35903F0628438F68004B4F4D /* HomeViewController.swift in Sources */,
+				35903F0628438F68004B4F4D /* LoginViewController.swift in Sources */,
 				35903F0C284398CE004B4F4D /* Model.swift in Sources */,
+				35903F102843A2D5004B4F4D /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

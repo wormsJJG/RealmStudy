@@ -6,12 +6,10 @@
 //
 
 import UIKit
-import RealmSwift
 
 class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-    
     }
 }
