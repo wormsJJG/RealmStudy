@@ -35,7 +35,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="로그인"/>
                                 <connections>
-                                    <segue destination="C1B-wT-2uV" kind="push" id="DrT-8Y-wWd"/>
+                                    <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WTW-if-CO5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aiU-Rc-eXs">
@@ -178,7 +178,7 @@
         <!--name님의 버킷리스트-->
         <scene sceneID="E2j-yg-rn9">
             <objects>
-                <viewController id="C1B-wT-2uV" customClass="HomeViewController" customModule="RealmStudy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeView" id="C1B-wT-2uV" customClass="HomeViewController" customModule="RealmStudy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZW1-cX-b8l">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -202,11 +202,11 @@
                         <viewLayoutGuide key="safeArea" id="Q4u-Sw-A51"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="name님의 버킷리스트" id="qH1-Ud-rgM"/>
+                    <navigationItem key="navigationItem" title="name님의 버킷리스트" largeTitleDisplayMode="always" id="qH1-Ud-rgM"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="paC-jf-t3e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="231.8840579710145" y="156.69642857142856"/>
+            <point key="canvasLocation" x="806" y="67"/>
         </scene>
     </scenes>
     <resources>

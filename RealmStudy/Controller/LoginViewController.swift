@@ -7,20 +7,29 @@
 
 import UIKit
 import RealmSwift
+import SwiftUI
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController{
     @IBOutlet weak var InsertIdTextField: UITextField!
     @IBOutlet weak var InsertPassWordTextField: UITextField!
     let realm = try! Realm()
-    var id = "";
-    var passWord = "";
     
     override func viewDidLoad() {
         super.viewDidLoad()
         print(Realm.Configuration.defaultConfiguration.fileURL!)
-        self.id = InsertIdTextField.text ?? "nil"
-        self.passWord = InsertPassWordTextField.text ?? "nil"
+        
     }
-    let user = realm.object(ofType: UserDB.self, forPrimaryKey: id)
-   
+    
+    @IBAction func login(_ sender: Any) {
+        let user = realm.object(ofType: UserDB.self, forPrimaryKey: InsertIdTextField.text ?? "nil")
+        if(InsertPassWordTextField.text ?? "nil"==user?.passWord){
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let homeVC = storyboard.instantiateViewController(withIdentifier: "HomeView") as! HomeViewController
+            homeVC.user = user
+            navigationController?.pushViewController(homeVC, animated: true)
+        }else{
+            
+        }
+    }
+    
 }
