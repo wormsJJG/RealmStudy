@@ -15,7 +15,8 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var InsertNameTextField: UITextField!
     @IBOutlet weak var InsertGenderTextField: UITextField!
     @IBOutlet weak var InsertAgeTextField: UITextField!
-    let realm = try! Realm()
+    
+    private let realm = try! Realm()
     var id: String = ""
     var passWord: String = ""
     var name: String = ""
@@ -39,4 +40,5 @@ class RegisterViewController: UIViewController {
             realm.add(User)
         }
     }
+    
 }

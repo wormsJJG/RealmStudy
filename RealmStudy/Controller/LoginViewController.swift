@@ -9,13 +9,18 @@ import UIKit
 import RealmSwift
 
 class LoginViewController: UIViewController {
-    let realm = try! Realm()
     @IBOutlet weak var InsertIdTextField: UITextField!
     @IBOutlet weak var InsertPassWordTextField: UITextField!
-    
+    let realm = try! Realm()
+    var id = "";
+    var passWord = "";
     
     override func viewDidLoad() {
         super.viewDidLoad()
         print(Realm.Configuration.defaultConfiguration.fileURL!)
+        self.id = InsertIdTextField.text ?? "nil"
+        self.passWord = InsertPassWordTextField.text ?? "nil"
     }
+    let user = realm.object(ofType: UserDB.self, forPrimaryKey: id)
+   
 }
