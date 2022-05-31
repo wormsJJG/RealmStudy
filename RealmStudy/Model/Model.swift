@@ -14,7 +14,7 @@ class UserDB: Object{
     @objc dynamic var name: String = ""
     @objc dynamic var gender: String = ""
     @objc dynamic var age: Int = 0
-    let bucketList = List<BucketList>()
+    var bucketList = List<BucketList>()
     
     var hasList: Bool{
         return bucketList.count > 0

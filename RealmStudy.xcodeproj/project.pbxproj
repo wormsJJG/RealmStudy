@@ -19,6 +19,8 @@
 		35903F0C284398CE004B4F4D /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35903F0B284398CE004B4F4D /* Model.swift */; };
 		35903F0E2843A2C1004B4F4D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35903F0D2843A2C1004B4F4D /* RegisterViewController.swift */; };
 		35903F102843A2D5004B4F4D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35903F0F2843A2D5004B4F4D /* HomeViewController.swift */; };
+		35C73B73284630CC009F93BE /* addBucketListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C73B72284630CC009F93BE /* addBucketListViewController.swift */; };
+		35C73B7628463DC8009F93BE /* titleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C73B7528463DC8009F93BE /* titleTableViewCell.swift */; };
 		D21CE1AE67F5032675A326DC /* Pods_RealmStudy_RealmStudyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA9C71556EA66FF87117A855 /* Pods_RealmStudy_RealmStudyUITests.framework */; };
 		EA017B122DF0EDF218295074 /* Pods_RealmStudyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C7AC82347820E82CDEABD18 /* Pods_RealmStudyTests.framework */; };
 		F2FE92D7D2BCFEBADD08305E /* Pods_RealmStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35E56EE4DB24B3D2F5653E70 /* Pods_RealmStudy.framework */; };
@@ -61,6 +63,8 @@
 		35903F0B284398CE004B4F4D /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		35903F0D2843A2C1004B4F4D /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		35903F0F2843A2D5004B4F4D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		35C73B72284630CC009F93BE /* addBucketListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addBucketListViewController.swift; sourceTree = "<group>"; };
+		35C73B7528463DC8009F93BE /* titleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = titleTableViewCell.swift; sourceTree = "<group>"; };
 		35E56EE4DB24B3D2F5653E70 /* Pods_RealmStudy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealmStudy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		40D7035390B2B9A06C76CCBF /* Pods-RealmStudyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmStudyTests.release.xcconfig"; path = "Target Support Files/Pods-RealmStudyTests/Pods-RealmStudyTests.release.xcconfig"; sourceTree = "<group>"; };
 		7CA90BF1363B353D82F56DFE /* Pods-RealmStudy-RealmStudyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmStudy-RealmStudyUITests.release.xcconfig"; path = "Target Support Files/Pods-RealmStudy-RealmStudyUITests/Pods-RealmStudy-RealmStudyUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -172,6 +176,8 @@
 				35903F0528438F68004B4F4D /* LoginViewController.swift */,
 				35903F0D2843A2C1004B4F4D /* RegisterViewController.swift */,
 				35903F0F2843A2D5004B4F4D /* HomeViewController.swift */,
+				35C73B72284630CC009F93BE /* addBucketListViewController.swift */,
+				35C73B7428463DA3009F93BE /* cell */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -183,6 +189,14 @@
 				35903ED628438B9D004B4F4D /* SceneDelegate.swift */,
 			);
 			name = Help;
+			sourceTree = "<group>";
+		};
+		35C73B7428463DA3009F93BE /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				35C73B7528463DC8009F93BE /* titleTableViewCell.swift */,
+			);
+			path = cell;
 			sourceTree = "<group>";
 		};
 		5E9123BCE312A5248373B315 /* Pods */ = {
@@ -447,11 +461,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35C73B7628463DC8009F93BE /* titleTableViewCell.swift in Sources */,
 				35903ED528438B9D004B4F4D /* AppDelegate.swift in Sources */,
 				35903F0E2843A2C1004B4F4D /* RegisterViewController.swift in Sources */,
 				35903ED728438B9D004B4F4D /* SceneDelegate.swift in Sources */,
 				35903F0628438F68004B4F4D /* LoginViewController.swift in Sources */,
 				35903F0C284398CE004B4F4D /* Model.swift in Sources */,
+				35C73B73284630CC009F93BE /* addBucketListViewController.swift in Sources */,
 				35903F102843A2D5004B4F4D /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
