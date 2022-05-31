@@ -22,13 +22,13 @@ class LoginViewController: UIViewController{
     
     @IBAction func login(_ sender: Any) {
         let user = realm.object(ofType: UserDB.self, forPrimaryKey: InsertIdTextField.text ?? "nil")
-        if(InsertPassWordTextField.text ?? "nil"==user?.passWord){
+        if(InsertPassWordTextField.text ?? "nil"==user?.passWord && InsertIdTextField.text ?? "nil" == user?.id){
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let homeVC = storyboard.instantiateViewController(withIdentifier: "HomeView") as! HomeViewController
             homeVC.user = user
             navigationController?.pushViewController(homeVC, animated: true)
         }else{
-            
+            print("아이디 또는 비번 틀림")
         }
     }
     
