@@ -8,7 +8,7 @@
 import UIKit
 import RealmSwift
 
-class addBucketListViewController: UIViewController {
+class AddBucketListViewController: UIViewController {
     let realm = try! Realm()
     var user: UserDB!
     var bucket: BucketList!
